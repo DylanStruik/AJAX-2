@@ -4,7 +4,7 @@ $gewicht = $_GET['gewicht'];
 $lengte = $_GET['lengte_cm'] / 100;
 // BMIcalc($gewicht,$lengte);
 
-$BMI = $gewicht / ($lengte * $lengte);
+$BMI = round($gewicht / ($lengte * $lengte),1);
 
 
 if($BMI < 18.5){
